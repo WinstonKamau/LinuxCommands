@@ -13,8 +13,8 @@ update_software() {
     apt --purge remove nginx
     # Remove uneeded packages
     apt autoremove
-    # Updates all packages based on the updated cache list
+    # Updates all packages based on the updated cache list. It will not upgrade packages that are not on the system already. Does not remove packages.
     apt upgrade
-    # Updates all packages adds upgrades and removes unneeded packages
+    # Updates all packages adds upgrades and removes unneeded packages. It may add upgrades that were not already on the system
     apt full-upgrade
 }
