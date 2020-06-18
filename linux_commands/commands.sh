@@ -121,12 +121,3 @@ chmod 0777 <file name> - no sticky bit
 chmod 1777 <file name> - sticky bit
 # Determine the amount of time a process has been running
 ps -p <pid> -o etime
-
-
-
-
-
-
-
-
-
